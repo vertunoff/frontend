@@ -3,7 +3,7 @@ import '../styles/page.css'
 
 const MenuButton = (props) =>{
     return(
-        <div className="menu-button">
+        <div className={`${props.button_type}-button`}>
             <button>{props.name}</button>
         </div>
     )

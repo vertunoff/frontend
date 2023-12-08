@@ -7,11 +7,11 @@ const Sidebar = () => {
     return(
         <div className="sidebar">
             <Icon></Icon>
-            <MenuButton name="последние"></MenuButton>
-            <MenuButton name="политика"></MenuButton>
-            <MenuButton name="экономика"></MenuButton>
-            <MenuButton name="спорт"></MenuButton>
-            <MenuButton name="наука"></MenuButton>
+            <MenuButton name="ПОСЛЕДНИЕ" button_type='menu'></MenuButton>
+            <MenuButton name="ЭКОНОМИКА" button_type='menu'></MenuButton>
+            <MenuButton name="СПОРТ" button_type='menu'></MenuButton>
+            <MenuButton name="НАУКА" button_type='menu'></MenuButton>
+            
         </div>
     )
 }

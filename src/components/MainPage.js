@@ -7,7 +7,6 @@ const MainPage = () =>{
     return(
         <div className="page">
             <PageBody></PageBody>
-            <PageFooter></PageFooter>
         </div>
     )
 }

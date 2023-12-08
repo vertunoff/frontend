@@ -17,33 +17,39 @@ body {
   flex-flow: column;
   height: 100vh;
   margin: 0 auto;
-  background-color: aqua;
   max-width: 1500px;
-  ;
+  
 }
 
 .page-body {
   display: flex;
-  height: 93%;
+  height: 100%;
   background-color: antiquewhite;
 }
 
 .sidebar {
-  width: 14%;
-  /* flex-grow: 2; */
+  /* width: 14%; */
+  flex-grow: 1.4;
+  flex-shrink: 1;
   background-color: #222222;
   display: flex;
   flex-direction: column;
   gap: 4%;
   align-items: center;
-
+  
 }
+.main {
+  flex-grow: 8.6;
+  flex-shrink: 2;
+  background: rgba(255, 250, 250, 0.80);}
 
 .icon {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 1vh;
+  margin-bottom: 6vh;
 }
 
 .menu-button {
@@ -52,11 +58,18 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.settings-button {
+  width: 100%;
+  margin-bottom: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 button {
   float: left;
   padding: 5% 9%;
-  font-size:1.52vw;
+  font-size:1vw;
   border-radius: 2%;
   width: 90%;
   background-color: #555;
@@ -72,15 +85,12 @@ button:hover {
 
 .sidebar img {
   padding: 2%;
-  width: 90%;
-  margin-bottom: 3%;
+  width: 100%;
 }
 
-
-.main {
-  /* flex-grow: 8; */
-  width: 86%;
-  background: rgba(255, 250, 250, 0.80);}
+.row-article-container img{
+  filter: brightness(75%);
+}
 
 .page-footer {
   height: 7%;
@@ -90,78 +100,88 @@ button:hover {
 
 .article-title{
   position: absolute;
-  bottom: 8px;
-  left: 16px;
-  font-family: 'Spectral SC', serif;
-  color: black;
-  font-size: 26px;
-  font-size: 1vw;
+  bottom: 5%;
+  left: 5%;
+  font-family: 'AvenirNextCyr-Medium', serif;
+  color: white;
+  font-size: 2vh;
 }
 .article-topic{
   position: absolute;
-  top: 18px;
-  left: 16px;
-  font-family: 'Seymour One', sans-serif;
+  top: 5%;
+  left: 5%;
+  font-family: 'AvenirNextCyr-Medium', serif;
   color: white;
-  font-size: 20px;
+  font-size: 1vw;
+}
+.article-resource{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-family: 'AvenirNextCyr-Medium', serif;
+  color: white;
   font-size: 1vw;
 }
 .main-content{
-  margin-left: 10vw;
-  margin-right: 20vw;
+  margin-left: 4%;
+  margin-right: 4%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4vh;
+  gap: 6%;
   background: rgba(255, 250, 250, 0.80);
 }
 .row-article-container{
   display: flex;
-  gap: 2vw;
+  gap: 1vw;
   height: 35%;
+  width: 100%;
 }
-.left-article-container{
+.big-article-container{
   height: 100%;
   position: relative;
   flex: 2;
-  background-color: aqua;
 }
-.right-article-containers{
-  flex: 1;
+.small-article-containers{
+  flex: 2;
   display: flex;
   flex-direction: column;
+  
   height: 100%;
   
   gap: 1.5vh;
 }
-.right-article{
+.small-article{
   position: relative;
   height: 50%;
+  width: 100%;
   overflow: hidden;
-  background-color: yellow;
 }
 
-.left-article-container img {
-
+.big-article-container img {
+  
   max-height: 100%;
   
 }
-.right-article-containers img {
+.small-article-containers img {
+  object-fit: cover;
+  object-position: 0% 20%;
   width: 100%;
   height: 100%;
   
 }
 
 .search-bar {
-  width: 60%;
-  height: 10vh;
+  width: 100%;
+
+  height: 6vh;
+  margin-top: 4vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:end;
 }
 .search-bar img{
-  padding: 1%;
-  width: 100%;
-  margin-bottom: 3%;
+  width: 50%;
+  height: 100%;
 }
